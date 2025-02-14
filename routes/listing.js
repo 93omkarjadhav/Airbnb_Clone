@@ -62,7 +62,7 @@ const { storage } = require("../cloudConfig.js");
 
 const upload = multer({ storage }); // Middleware for handling image uploads
 
-// Route for listing all items and creating new listing
+
 router
   .route("/")
   .get(wrapAsync(listingController.index)) // Show all listings
